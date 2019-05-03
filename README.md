@@ -36,11 +36,17 @@ screen -d -r yourname -> 结束当前session并回到yourname这个session
 import requests
 import itchat
 import re
+import random
 
-key = 'd6a24a6051f041c490abea44211317e6' # 这里是你自己机器人的apikey
+key = '6dde22b7692b48fe9f89ce52b2673e0f' # 这里是你自己机器人的apikey
+arr=['dd6710813403477689911f4b322cf685','c3c69290cf9d4357923d2f6ece25ecdd','6dde22b7692b48fe9f89ce52b2673e0f','6fce7ad8fb354b6a91c30eb05681590a','dd6710813403477689911f4b322cf685']
+
 nickName = '小兔几' # 这里是昵称或群昵称，用于检测群聊是否被艾特
 
 def get_response(msg):
+    a=random.randint(1,4)
+    key=arr[a]
+    print(key)
     # 构造了要发送给服务器的数据
     apiUrl = 'http://www.tuling123.com/openapi/api'
     data = {'key': key, 'info': msg, 'userid' : 'wechat-robot'}
@@ -72,5 +78,6 @@ def tuling_reply(msg):
 # 为了让实验过程更加方便（修改程序不用多次扫码），我们使用热启动
 #itchat.auto_login(hotReload=True)
 itchat.run()
+
 
 ~~~
