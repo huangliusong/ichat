@@ -13,7 +13,7 @@ screen -r yourname -> 回到yourname这个session
 screen -d yourname -> 远程detach某个session
 screen -d -r yourname -> 结束当前session并回到yourname这个session
 ~~~
-
+  
 
 ## 命令行二维码显示
 
