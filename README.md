@@ -82,8 +82,10 @@ itchat.run()
 
 
 ~~~
-
+# for循环刷屏
+## 根据备注获取这个用户的id
 > itchat.search_friends(name='佳秀')
+
 
 ~~~
 n = 100
