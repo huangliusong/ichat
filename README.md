@@ -83,9 +83,10 @@ itchat.run()
 
 ~~~
 
+> itchat.search_friends(name='佳秀')
+
 ~~~
 n = 100
-itchat.search_friends(name='佳秀')
 sum = 0
 counter = 1
 while counter <= n:
