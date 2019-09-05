@@ -97,3 +97,15 @@ while counter <= n:
     itchat.send(u'测试消息发送', '@9336e41564991ee051cc87a971ccbf473c15a4679cd8f47723da6cc803ae5b6c')
 
 ~~~
+
+# 系统默认编码
+~~~
+import sys
+print u'系统默认编码为', sys.getdefaultencoding()
+
+default_encoding = 'utf-8'  # 重新设置编码方式为uft-8
+if sys.getdefaultencoding() != default_encoding:
+    reload(sys)
+    sys.setdefaultencoding(default_encoding)
+print u'系统修改编码为', sys.getdefaultencoding()
+~~~
