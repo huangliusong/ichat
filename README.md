@@ -118,6 +118,6 @@ counter = 1
 while counter <= n:
     sum = sum + counter
     counter += 1
-    itchat.send(
-        u'9点了，雀儿喜起床啦！[呲牙][呲牙]', '@3b69abe6793fcce8c1910019141211192c4ea8fe924e790b8bf29f34b972dd78')
+    itchat.send(u'9点了，雀儿喜起床啦！[呲牙][呲牙]', '@3b69abe6793fcce8c1910019141211192c4ea8fe924e790b8bf29f34b972dd78')
+
 ～～～
