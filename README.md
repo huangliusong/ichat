@@ -111,7 +111,7 @@ print u'系统修改编码为', sys.getdefaultencoding()
 ~~~
 
 
-～～～
+~~~
 n = 100
 sum = 0
 counter = 1
@@ -120,4 +120,17 @@ while counter <= n:
     counter += 1
     itchat.send(u'9点了，雀儿喜起床啦！[呲牙][呲牙]', '@3b69abe6793fcce8c1910019141211192c4ea8fe924e790b8bf29f34b972dd78')
 
-～～～
+~~~
+
+
+
+~~~
+n = 100
+sum = 0
+counter = 1
+while counter <= n:
+    sum = sum + counter
+    counter += 1
+    itchat.send(u'9点了，雀儿喜起床啦！[呲牙][呲牙]', '@2d4a92b3d9c656dba86ce30fea4a5c7ab31c42d6a9331b987048c89f43642868')
+
+~~~
