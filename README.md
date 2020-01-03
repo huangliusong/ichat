@@ -134,3 +134,24 @@ while counter <= n:
     itchat.send(u'9点了，雀儿喜起床啦！[呲牙][呲牙]', '@2d4a92b3d9c656dba86ce30fea4a5c7ab31c42d6a9331b987048c89f43642868')
 
 ~~~
+
+
+
+~~~
+import datetime
+day = datetime.datetime.now()
+day2 = datetime.date.today()
+print("当前年月日时分秒:", day)
+print("只查看年月日:", day2)
+day
+n = 100
+sum = 0
+counter = 1
+while counter <= n:
+    day = datetime.datetime.now()
+    pp=day.strftime("%Y-%m-%d %H:%M:%S")
+    print(pp)
+    sum = sum + counter
+    counter += 1
+    itchat.send(u''+pp+'，雀儿喜起床啦！','@2d4a92b3d9c656dba86ce30fea4a5c7ab31c42d6a9331b987048c89f43642868')
+~~~
