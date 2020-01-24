@@ -157,7 +157,7 @@ while counter <= n:
 ~~~
 
 
-
+## 发送群消息　
 ~~~
 
 room_name = itchat.search_chatrooms(name='我的群')
