@@ -155,3 +155,14 @@ while counter <= n:
     counter += 1
     itchat.send(u''+pp+'，雀儿喜起床啦！','@2d4a92b3d9c656dba86ce30fea4a5c7ab31c42d6a9331b987048c89f43642868')
 ~~~
+
+
+
+~~~
+
+room_name = itchat.search_chatrooms(name='我的群')
+# chatrooms 为从你群列表里查到的群名为自定义群名的list，因此为了方便，群名最好不一样
+room_name = chatrooms[0]['UserName']
+# room_name 为你建立那个群聊对象
+itchat.send('正常', toUserName=room_name)
+~~~
